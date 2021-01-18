@@ -107,7 +107,7 @@ const App = () => {
 				/>
 			</div>
 
-			{/* This is the list of nomitaded movies */}
+			{/* This is the list of nominated movies */}
 			<div className='app-container__movies-nominations'>
 				<h2 className='app-container__movies-nominations-title'>
 					 Nominations

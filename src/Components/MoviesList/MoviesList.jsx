@@ -9,6 +9,7 @@ const MoviesList = (props) => {
 		<div className="movies-list">
 			{props.movies.map((movie, index) => (
 				movie.Poster === 'N/A' ? null :
+
 				<div className='movies-list__all-container'>
 					<div className='movies-list__container'>
 						<img className="movies-list__poster" 
@@ -17,7 +18,8 @@ const MoviesList = (props) => {
 						</img>
 						<div className='movies-list__nominations-click'
 							onClick={() => props.handleNominationsClick(movie)} >
-							<NominatedComponent className='movies-list__nominated-component' />
+							<NominatedComponent 
+							  className='movies-list__nominated-component' />
 						</div>
 					</div> 	
 					<div  className='movies-list__bottom'>
@@ -25,6 +27,7 @@ const MoviesList = (props) => {
 						<p className='movies-list__bottom-year'>{movie.Year}</p>
 					</div>
 				</div>
+
 			))}
 		</div>
 	);
