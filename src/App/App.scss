@@ -1,0 +1,43 @@
+.app-container{
+   padding-left: 1%;
+   background-color: #141516;
+
+   height: 100vh;
+
+   &__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      color: rgb(215, 194, 0);
+   }
+
+   &__search-box {
+      padding-right: 0;
+      padding-top: 0;
+   }
+
+   &__movies{
+      &-search-nav{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding-top: 10px;
+         padding-bottom: 0;
+      }
+      &-list-title {
+         font-size: 2rem;
+         font-weight: 600;
+         padding-top: 10px;
+         padding-bottom:5px;
+         color: rgb(244, 244, 244);
+      }
+      &-nominations-title {
+         font-size: 2rem;
+         font-weight: 600;
+         padding-top: 10px;
+         padding-bottom: 5px;
+         color: rgb(244, 244, 244);
+      }
+   }
+}
